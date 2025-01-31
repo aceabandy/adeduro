@@ -1,0 +1,138 @@
+{% load static %}
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'css/nicepage.css' %}" media="screen">
+<link rel="stylesheet" href="{% static 'css/bio.css' %}" media="screen">
+    <script class="u-script" type="text/javascript" src="{% static 'js/jquery.js' %} " defer=""></script>
+    <script class="u-script" type="text/javascript" src="{% static 'js/nicepage.js' %}" defer=""></script>
+    <meta name="generator" content="Nicepage 7.2.3, nicepage.com">
+    
+    
+    
+    
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Ubuntu:300,300i,400,400i,500,500i,700,700i">
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "",
+		"logo": "images/waologo-removebg-preview.png"
+}</script>
+    <meta name="theme-color" content="#a18bbf">
+    <meta property="og:title" content="Home">
+    <meta property="og:type" content="website">
+  <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
+  <body data-home-page="Home.html" data-home-page-title="Home" data-path-to-root="./" data-include-products="false" class="u-body u-overlap u-xl-mode" data-lang="en"><header class="u-clearfix u-header u-white u-header" id="sec-1e1a">
+    <div class="u-clearfix u-sheet u-sheet-1">
+        <a href="#" class="u-image u-logo u-image-1" data-image-width="500" data-image-height="500">
+          <img src="{%  static 'images/waologo-removebg-preview.png' %}" class="u-logo-image u-logo-image-1">
+        </a>
+        <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1">
+          <div class="menu-collapse u-custom-font u-font-courier-new" style="font-size: 1rem; letter-spacing: 0px;">
+            <a class="u-button-style u-custom-active-color u-custom-color u-custom-hover-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-hamburger-link u-nav-link u-text-body-color u-hamburger-link-1" href="#">
+              <svg class="u-svg-link" viewBox="0 0 24 24"><use xlink:href="#menu-hamburger"></use></svg>
+              <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</g></svg>
+            </a>
+          </div>
+          <div class="u-custom-menu u-nav-container">
+            <ul class="u-custom-font u-font-courier-new u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-hover-palette-3-light-2 u-nav-link u-text-active-black u-text-black u-text-hover-black" href="{% url 'index' %}" style="padding: 10px 20px;">Home</a>
+</li>
+<li class="u-nav-item"><a class="u-button-style u-hover-palette-3-light-2 u-nav-link u-text-active-black u-text-black u-text-hover-black" href="{% url 'bio' %}" style="padding: 10px 20px;">Bio</a>
+</li>
+<li class="u-nav-item"><a class="u-button-style u-hover-palette-3-light-2 u-nav-link u-text-active-black u-text-black u-text-hover-black" href="{% url 'book' %}" style="padding: 10px 20px;">Books</a>
+</li>
+<li class="u-nav-item"><a class="u-button-style u-hover-palette-3-light-2 u-nav-link u-text-active-black u-text-black u-text-hover-black" href="{% url 'video' %}" style="padding: 10px 20px;">Video</a>
+</li>
+<li class="u-nav-item"><a class="u-button-style u-hover-palette-3-light-2 u-nav-link u-text-active-black u-text-black u-text-hover-black" href="{% url 'contact' %}" style="padding: 10px 20px;">Contact</a>
+</li>
+<li class="u-nav-item"><a class="u-button-style u-hover-palette-3-light-2 u-nav-link u-text-active-black u-text-black u-text-hover-black" href="{% url 'blog' %}" style="padding: 10px 20px;">Blog</a>
+</li>
+</ul>
+          </div>
+          <div class="u-custom-menu u-nav-container-collapse">
+            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+              <div class="u-inner-container-layout u-sidenav-overflow">
+                <div class="u-menu-close"></div>
+                <ul class="u-align-center u-custom-font u-font-montserrat u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'index' %}" style="padding-top: 38px; padding-bottom: 38px;">Home</a>
+</li>
+<li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'bio' %}" style="padding-top: 38px; padding-bottom: 38px;">Bio</a>
+</li>
+<li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'book' %}" style="padding-top: 38px; padding-bottom: 38px;">Books</a>
+</li>
+<li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'video' %}" style="padding-top: 38px; padding-bottom: 38px;">Video</a>
+</li>
+<li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'contact' %}" style="padding-top: 38px; padding-bottom: 38px;">Contact</a>
+</li>
+<li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'blog' %}" style="padding-top: 38px; padding-bottom: 38px;">Blog</a>
+</li>
+</ul>
+              </div>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+        </nav>
+      </div>
+    
+    </header>
+    <br>
+    <br>
+    <br>
+
+    <section class="u-black u-clearfix u-section-1" id="carousel_9805">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="custom-expanded data-layout-selected u-clearfix u-gutter-0 u-layout-spacing-horizontal u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-align-left u-black u-container-align-left u-container-style u-layout-cell u-left-cell u-size-31 u-layout-cell-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="250">
+                <div class="u-container-layout u-container-layout-1">
+                  <div class="u-palette-1-base u-shape u-shape-circle u-shape-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="250"></div>
+                  <p class="u-align-left u-custom-font u-font-montserrat u-text u-text-1"> Dr. Wálé Adédúró, fondly called Dr. WÁÒ, is Africa's doyen of Productivity and a validated Life, Business, and Ministry Results Maximiser. <br>&nbsp;He has helped individuals and organizations maximize results with available resources. <br>&nbsp;He is the author of six books,&nbsp;including"Billionaire Goes to School", and a renowned Productivity Coach.<br>
+                    <br>Educational Background<br>🎓 PhD in Productivity – Evangel Christian University, USA<br>🎓 PhD in Christian Education – Maxwell Christian University<br>🎓 Doctoral Degree in Theology and Philosophy – School of the Spirit Bible Training Centre, USA<br>🎓 BSc in Political Science – University of Lagos<br>🎓 Masters in Industrial Relations – University of Lagos<br>
+                    <br>
+                    <br>
+                  </p>
+                </div>
+              </div>
+              <div class="u-container-align-center u-container-style u-image u-image-round u-layout-cell u-radius u-right-cell u-size-29 u-image-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-image-width="883" data-image-height="1080">
+                <div class="u-container-layout u-container-layout-2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="u-custom-font u-font-montserrat u-text u-text-2"> Certifications<br>✔️ Maxwell Leadership Certified Coach<br>✔️ Certified Management Consultant<br>✔️ Fellow of Pan African Consultants Association<br>✔️ Member of the Advertising Practitioners Council<br>
+          <br>Achievements<br>Dr. WÁÒ is a&nbsp;mentor and coach&nbsp;to leaders across various sectors, including Agribusiness, Banking, and Energy. He has&nbsp;trained over 200 Agripreneurs, many of whom are now exporting their brands globally.As a Performance Architect, he has worked with Government Agencies, Churches, and SMEs to deliver bespoke productivity solutions. He is the Founding Chairman of the&nbsp;School of Mentorship and Productivity Limited&nbsp;and CEO of Thrones and Tones Consulting.
+        </p>
+        <div class="u-clearfix u-group-elements u-group-elements-1">
+          <div class="u-social-icons u-spacing-24 u-social-icons-1">
+            <a class="u-social-url" title="facebook" target="_blank" href="https://www.facebook.com/wale.adeduro?mibextid=KFxxJD">
+              <span class="u-icon u-social-facebook u-social-icon u-text-black">
+                <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xlink:href="#svg-02c2"></use></svg>
+                <svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-02c2"><circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M73.5,31.6h-9.1c-1.4,0-3.6,0.8-3.6,3.9v8.5h12.6L72,58.3H60.8v40.8H43.9V58.3h-8V43.9h8v-9.2
+c0-6.7,3.1-17,17-17h12.5v13.9H73.5z"></path></svg>
+              </span>
+            </a>
+            <a class="u-social-url" title="instagram" target="_blank" href="https://www.instagram.com/waleadeduro?igsh=MTJ1bHlwNHQ2azRpZg==">
+              <span class="u-icon u-social-icon u-social-instagram u-text-black">
+                <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xlink:href="#svg-a197"></use></svg>
+                <svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-a197"><circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M55.9,38.2c-9.9,0-17.9,8-17.9,17.9C38,66,46,74,55.9,74c9.9,0,17.9-8,17.9-17.9C73.8,46.2,65.8,38.2,55.9,38.2
+z M55.9,66.4c-5.7,0-10.3-4.6-10.3-10.3c-0.1-5.7,4.6-10.3,10.3-10.3c5.7,0,10.3,4.6,10.3,10.3C66.2,61.8,61.6,66.4,55.9,66.4z"></path><path fill="#FFFFFF" d="M74.3,33.5c-2.3,0-4.2,1.9-4.2,4.2s1.9,4.2,4.2,4.2s4.2-1.9,4.2-4.2S76.6,33.5,74.3,33.5z"></path><path fill="#FFFFFF" d="M73.1,21.3H38.6c-9.7,0-17.5,7.9-17.5,17.5v34.5c0,9.7,7.9,17.6,17.5,17.6h34.5c9.7,0,17.5-7.9,17.5-17.5V38.8
+C90.6,29.1,82.7,21.3,73.1,21.3z M83,73.3c0,5.5-4.5,9.9-9.9,9.9H38.6c-5.5,0-9.9-4.5-9.9-9.9V38.8c0-5.5,4.5-9.9,9.9-9.9h34.5
+c5.5,0,9.9,4.5,9.9,9.9V73.3z"></path></svg>
+              </span>
+            </a>
+          </div>
+          <span class="u-black u-file-icon u-icon u-icon-3" data-href="https://youtu.be/FWepE1qyrIw?si=LWafxS57perLTAHp" data-target="_blank">
+            <img src="{% static 'images/3820269-1885a068.png' %}" alt="">
+          </span>
+        </div>
+      </div>
+    </section>
+    
+
+  
+</body></html>

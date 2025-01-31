@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .search-results-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .search-result {
+            width: 300px;
+            text-align: center;
+        }
+        .search-result img {
+            width: 200px; /* Increased image size */
+            height: auto;
+        }
+        .search-result h3 {
+            margin: 10px 0;
+        }
+        .search-result p {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.6;
+        }
+        .search-result .btn {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Results -->
+{% if blog_results %}
+    <div class="search-results-container">
+        {% if blog_results %}
+            <h2>Culture</h2>
+            {% for result in blog_results %}
+                <div class="search-result">
+                    <img src="{{ result.imgbb_url }}" alt="{{ result.title }}">
+                    <h3>{{ result.title }}</h3>
+                    <p>{{ result.content|truncatechars:50 }}</p>
+                    <a href="{% url 'blog_detail' result.id %}" class="btn btn-primary">Read More</a>
+                </div>
+            {% endfor %}
+        {% endif %}
+
+    </div>
+{% else %}
+    <p>No search result found.....</p>
+{% endif %}
+
+</body>
+</html>
