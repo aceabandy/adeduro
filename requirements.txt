@@ -1,7 +1,6 @@
 asgiref==3.8.1
 Django==4.2.5
 django-ckeditor==6.7.2
-django-js-asset==3.0.1
 psycopg2-binary==2.9.10
 sqlparse==0.5.3
 tzdata==2025.1
